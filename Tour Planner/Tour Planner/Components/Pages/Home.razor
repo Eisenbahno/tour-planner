@@ -1,0 +1,34 @@
+﻿@page "/"
+@using Shared.Models
+
+<MudButtonGroup Color="Color.Primary" Variant="Variant.Outlined" Size="Size.Small">
+    <MudButton>File</MudButton>
+    <MudButton>Edit</MudButton>
+    <MudButton>Options</MudButton>
+</MudButtonGroup>
+
+<MudItem xs="12" sm="6" md="4">
+    <MudAutocomplete T="string" Label="Search for tours..." @bind-Value="value" SearchFunc="@Search"
+                     ResetValueOnEmptyText="@resetValueOnEmptyText"
+                     CoerceText="@coerceText" CoerceValue="@coerceValue" />
+</MudItem>
+
+@code
+{
+    private bool resetValueOnEmptyText;
+    private bool coerceText;
+    private bool coerceValue;
+    private string value;
+    private List<string> tours = new(); //TODO: connect tours list with backend
+    
+    private async Task<IEnumerable<string>> Search(string value)
+    {
+        //TODO: In real life use an asynchronous function for fetching data from an api.
+        
+
+        // if text is null or empty, show complete list
+        if (string.IsNullOrEmpty(value))
+            return tours;
+        return tours.Where(x => x.Contains(value, StringComparison.InvariantCultureIgnoreCase));
+    }
+}

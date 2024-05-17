@@ -1,0 +1,50 @@
+{
+  "Version": 1,
+  "Hash": "YWF+FlJa7E6MRtl7dseQH+WWiUeO4ICeoLYUvYKMy1U=",
+  "Source": "Shared",
+  "BasePath": "_content/Shared",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [
+    {
+      "Identity": "/Users/stefanrezk/.nuget/packages/mudblazor/6.19.1/staticwebassets/MudBlazor.min.css",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "/Users/stefanrezk/.nuget/packages/mudblazor/6.19.1/staticwebassets/",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/stefanrezk/.nuget/packages/mudblazor/6.19.1/staticwebassets/MudBlazor.min.css"
+    },
+    {
+      "Identity": "/Users/stefanrezk/.nuget/packages/mudblazor/6.19.1/staticwebassets/MudBlazor.min.js",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "/Users/stefanrezk/.nuget/packages/mudblazor/6.19.1/staticwebassets/",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/stefanrezk/.nuget/packages/mudblazor/6.19.1/staticwebassets/MudBlazor.min.js"
+    }
+  ]
+}

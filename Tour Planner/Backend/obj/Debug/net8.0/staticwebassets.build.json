@@ -1,0 +1,119 @@
+{
+  "Version": 1,
+  "Hash": "V9ZtYjHwZPVDxAaOjYC+/XIA1kOMqHYbUcpPmdV82Zw=",
+  "Source": "Backend",
+  "BasePath": "_content/Backend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Shared/Shared.csproj",
+      "Version": 2,
+      "Source": "Shared",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    },
+    {
+      "Identity": "/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/Tour Planner.csproj",
+      "Version": 2,
+      "Source": "Tour_Planner",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Tour_Planner/wwwroot",
+      "Source": "Tour_Planner",
+      "ContentRoot": "/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/wwwroot/",
+      "BasePath": "_content/Tour_Planner",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/stefanrezk/.nuget/packages/mudblazor/6.19.1/staticwebassets/MudBlazor.min.css",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "/Users/stefanrezk/.nuget/packages/mudblazor/6.19.1/staticwebassets/",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/stefanrezk/.nuget/packages/mudblazor/6.19.1/staticwebassets/MudBlazor.min.css"
+    },
+    {
+      "Identity": "/Users/stefanrezk/.nuget/packages/mudblazor/6.19.1/staticwebassets/MudBlazor.min.js",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "/Users/stefanrezk/.nuget/packages/mudblazor/6.19.1/staticwebassets/",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/stefanrezk/.nuget/packages/mudblazor/6.19.1/staticwebassets/MudBlazor.min.js"
+    },
+    {
+      "Identity": "/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/wwwroot/app.css",
+      "SourceId": "Tour_Planner",
+      "SourceType": "Project",
+      "ContentRoot": "/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/wwwroot/",
+      "BasePath": "_content/Tour_Planner",
+      "RelativePath": "app.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/app.css"
+    },
+    {
+      "Identity": "/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/wwwroot/favicon.ico",
+      "SourceId": "Tour_Planner",
+      "SourceType": "Project",
+      "ContentRoot": "/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/wwwroot/",
+      "BasePath": "_content/Tour_Planner",
+      "RelativePath": "favicon.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/favicon.ico"
+    }
+  ]
+}
