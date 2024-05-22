@@ -24,5 +24,34 @@ public class InitialCreate : Migration
                 
             },
             constraints: table => { table.PrimaryKey("PK_Tours", x => x.Id); });
+        
+        migrationBuilder.CreateTable(
+            name: "TourLogs",
+            columns: table => new
+            {
+                id = table.Column<int>(nullable: false)
+                    .Annotation("SqlServer:Identity", "1, 1"),
+                date = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                comment = table.Column<string>(type: "text", nullable: true),
+                difficulty = table.Column<int>(type: "integer", nullable: false),
+                totaldistance = table.Column<double>(name: "total_distance", type: "double precision", nullable: false),
+                totaltime = table.Column<TimeSpan>(name: "total_time", type: "interval", nullable: false),
+                rating = table.Column<int>(type: "integer", nullable: false)
+            },
+            constraints: table =>
+            {
+                table.PrimaryKey("PK_TourLogs", x => x.id);
+            });
+
     }
+    
+    protected override void Down(MigrationBuilder migrationBuilder)
+    {
+        migrationBuilder.DropTable(
+            name: "TourLogs");
+
+        migrationBuilder.DropTable(
+            name: "Tours");
+    }
+
 }
