@@ -15,11 +15,18 @@ public class Program
         builder.Services.AddRazorComponents()
             .AddInteractiveServerComponents();
 
-        builder.Services.AddMudServices();
-        //TODO: Add other EF Services per Object
-        builder.Services.AddDbContextFactory<ToursDbContext>((DbContextOptionsBuilder options) 
-            => options.UseSqlServer(builder.Configuration.GetConnectionString("Default") 
-                                    ?? throw new NullReferenceException("No connection string in config!")));
+        // builder.Services.AddMudServices();
+        // //TODO: Add other EF Services per Object
+        // builder.Services.AddDbContextFactory<ToursDbContext>((DbContextOptionsBuilder options) 
+        //     => options.UseSqlServer(builder.Configuration.GetConnectionString("Default") 
+        //                             ?? throw new NullReferenceException("No connection string in config!")));
+        
+        builder.Services.AddDbContextFactory<ToursDbContext>((DbContextOptionsBuilder options) =>
+            options.UseNpgsql(builder.Configuration.GetConnectionString("Default")
+                              ?? throw new NullReferenceException("No connection string in config!"))
+                .EnableSensitiveDataLogging()  // Optional: Aktiviert detaillierte Protokollierung
+                .LogTo(Console.WriteLine, LogLevel.Information));
+
 
         var app = builder.Build();
 

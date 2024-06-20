@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "80IRkqUwVog/txHvI/6H/SM1bPPr6Psby4v22vAB4sc=",
+  "Hash": "mj8KPfidRxyTBM2eIddbMkW/vAIyXcFeMg5r8GwJ4NY=",
   "Source": "Tour_Planner",
   "BasePath": "_content/Tour_Planner",
   "Mode": "Default",
@@ -11,11 +11,11 @@
       "Version": 2,
       "Source": "Shared",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
-      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "AdditionalPublishProperties": "",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
-      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+      "AdditionalBuildProperties": "",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
     }
   ],
   "DiscoveryPatterns": [
@@ -29,10 +29,10 @@
   ],
   "Assets": [
     {
-      "Identity": "/Users/stefanrezk/.nuget/packages/mudblazor/6.19.1/staticwebassets/MudBlazor.min.css",
+      "Identity": "/Users/stefanrezk/.nuget/packages/mudblazor/6.20.0/staticwebassets/MudBlazor.min.css",
       "SourceId": "MudBlazor",
       "SourceType": "Package",
-      "ContentRoot": "/Users/stefanrezk/.nuget/packages/mudblazor/6.19.1/staticwebassets/",
+      "ContentRoot": "/Users/stefanrezk/.nuget/packages/mudblazor/6.20.0/staticwebassets/",
       "BasePath": "_content/MudBlazor",
       "RelativePath": "MudBlazor.min.css",
       "AssetKind": "All",
@@ -45,13 +45,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/stefanrezk/.nuget/packages/mudblazor/6.19.1/staticwebassets/MudBlazor.min.css"
+      "OriginalItemSpec": "/Users/stefanrezk/.nuget/packages/mudblazor/6.20.0/staticwebassets/MudBlazor.min.css"
     },
     {
-      "Identity": "/Users/stefanrezk/.nuget/packages/mudblazor/6.19.1/staticwebassets/MudBlazor.min.js",
+      "Identity": "/Users/stefanrezk/.nuget/packages/mudblazor/6.20.0/staticwebassets/MudBlazor.min.js",
       "SourceId": "MudBlazor",
       "SourceType": "Package",
-      "ContentRoot": "/Users/stefanrezk/.nuget/packages/mudblazor/6.19.1/staticwebassets/",
+      "ContentRoot": "/Users/stefanrezk/.nuget/packages/mudblazor/6.20.0/staticwebassets/",
       "BasePath": "_content/MudBlazor",
       "RelativePath": "MudBlazor.min.js",
       "AssetKind": "All",
@@ -64,7 +64,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/stefanrezk/.nuget/packages/mudblazor/6.19.1/staticwebassets/MudBlazor.min.js"
+      "OriginalItemSpec": "/Users/stefanrezk/.nuget/packages/mudblazor/6.20.0/staticwebassets/MudBlazor.min.js"
     },
     {
       "Identity": "/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/wwwroot/app.css",
