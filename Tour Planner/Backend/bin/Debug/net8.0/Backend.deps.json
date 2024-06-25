@@ -16,8 +16,7 @@
           "MudBlazor": "6.20.0",
           "Npgsql": "7.0.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.0",
-          "Tour_Planner": "1.0.0",
-          "Tour_Planner.Reference": "1.0.0.0"
+          "Shared": "1.0.0"
         },
         "runtime": {
           "Backend.dll": {}
@@ -852,29 +851,6 @@
         "runtime": {
           "Shared.dll": {}
         }
-      },
-      "Tour_Planner/1.0.0": {
-        "dependencies": {
-          "Microsoft.AspNetCore.Components.WebAssembly": "7.0.10",
-          "Microsoft.AspNetCore.Components.WebAssembly.DevServer": "7.0.10",
-          "Microsoft.EntityFrameworkCore": "7.0.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.0",
-          "MudBlazor": "6.20.0",
-          "Npgsql": "7.0.0",
-          "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.0",
-          "Shared": "1.0.0"
-        },
-        "runtime": {
-          "Tour_Planner.dll": {}
-        }
-      },
-      "Tour_Planner.Reference/1.0.0.0": {
-        "runtime": {
-          "Tour_Planner.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
       }
     }
   },
@@ -1516,16 +1492,6 @@
     },
     "Shared/1.0.0": {
       "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Tour_Planner/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Tour_Planner.Reference/1.0.0.0": {
-      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

@@ -1,11 +1,22 @@
 {
   "Version": 1,
-  "Hash": "mj8KPfidRxyTBM2eIddbMkW/vAIyXcFeMg5r8GwJ4NY=",
+  "Hash": "nMaSB80R4LHpKG7NQF7KZFaUUkR7KKfHsQZpruFTIXY=",
   "Source": "Tour_Planner",
   "BasePath": "_content/Tour_Planner",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Backend/Backend.csproj",
+      "Version": 2,
+      "Source": "Backend",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    },
     {
       "Identity": "/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Shared/Shared.csproj",
       "Version": 2,

@@ -1559,29 +1559,6 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
-      },
-      "Tour_Planner/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "Microsoft.AspNetCore.Components.WebAssembly": "7.0.10",
-          "Microsoft.AspNetCore.Components.WebAssembly.DevServer": "7.0.10",
-          "Microsoft.EntityFrameworkCore": "7.0.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.0",
-          "MudBlazor": "6.0.0",
-          "Npgsql": "7.0.0",
-          "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.0",
-          "Shared": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Tour_Planner.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Tour_Planner.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
       }
     }
   },
@@ -4546,11 +4523,6 @@
       "type": "project",
       "path": "../Shared/Shared.csproj",
       "msbuildProject": "../Shared/Shared.csproj"
-    },
-    "Tour_Planner/1.0.0": {
-      "type": "project",
-      "path": "../Tour Planner/Tour Planner.csproj",
-      "msbuildProject": "../Tour Planner/Tour Planner.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4563,7 +4535,7 @@
       "MudBlazor >= 6.*",
       "Npgsql >= 7.0.0",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 7.0.0",
-      "Tour_Planner >= 1.0.0"
+      "Shared >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -4591,8 +4563,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/Tour Planner.csproj": {
-              "projectPath": "/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/Tour Planner.csproj"
+            "/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Shared/Shared.csproj": {
+              "projectPath": "/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Shared/Shared.csproj"
             }
           }
         }

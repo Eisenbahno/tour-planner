@@ -37,12 +37,12 @@
 
 
     <ItemGroup>
-      <ProjectReference Include="..\Tour Planner\Tour Planner.csproj" />
+      <Folder Include="Migrations\" />
     </ItemGroup>
 
 
     <ItemGroup>
-      <Folder Include="Migrations\" />
+      <ProjectReference Include="..\Shared\Shared.csproj" />
     </ItemGroup>
 
 </Project>

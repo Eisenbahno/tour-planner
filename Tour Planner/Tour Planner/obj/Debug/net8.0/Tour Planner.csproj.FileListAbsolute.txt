@@ -89,3 +89,9 @@
 /Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll
 /Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
 /Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll
+/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Backend.deps.json
+/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Backend.runtimeconfig.json
+/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Backend.staticwebassets.runtime.json
+/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Backend
+/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Backend.dll
+/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Backend.pdb

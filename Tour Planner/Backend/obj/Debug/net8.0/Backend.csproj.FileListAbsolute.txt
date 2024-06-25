@@ -1,8 +1,4 @@
-/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Backend/bin/Debug/net8.0/Tour_Planner.deps.json
-/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Backend/bin/Debug/net8.0/Tour_Planner.runtimeconfig.json
 /Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Backend/bin/Debug/net8.0/Shared.staticwebassets.runtime.json
-/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Backend/bin/Debug/net8.0/Tour_Planner.staticwebassets.runtime.json
-/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Backend/bin/Debug/net8.0/Tour_Planner
 /Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Backend/bin/Debug/net8.0/appsettings.Development.json
 /Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Backend/bin/Debug/net8.0/appsettings.json
 /Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Backend/bin/Debug/net8.0/Backend.staticwebassets.runtime.json
@@ -55,8 +51,6 @@
 /Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Backend/bin/Debug/net8.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
 /Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Backend/bin/Debug/net8.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
 /Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Backend/bin/Debug/net8.0/Shared.dll
-/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Backend/bin/Debug/net8.0/Tour_Planner.dll
-/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Backend/bin/Debug/net8.0/Tour_Planner.pdb
 /Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Backend/bin/Debug/net8.0/Shared.pdb
 /Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Backend/obj/Debug/net8.0/Backend.csproj.AssemblyReference.cache
 /Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Backend/obj/Debug/net8.0/Backend.GeneratedMSBuildEditorConfig.editorconfig

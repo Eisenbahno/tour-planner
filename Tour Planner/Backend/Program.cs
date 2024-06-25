@@ -1,7 +1,5 @@
 using Backend.DbContext;
 using Microsoft.EntityFrameworkCore;
-using MudBlazor.Services;
-using Tour_Planner.Components;
 
 namespace Backend;
 
@@ -29,7 +27,7 @@ public class Program
 
 
         var app = builder.Build();
-
+        
         // Configure the HTTP request pipeline.
         if (!app.Environment.IsDevelopment())
         {
@@ -43,8 +41,7 @@ public class Program
         app.UseStaticFiles();
         app.UseAntiforgery();
 
-        app.MapRazorComponents<App>()
-            .AddInteractiveServerRenderMode();
+        
 
         app.Run();
     }
