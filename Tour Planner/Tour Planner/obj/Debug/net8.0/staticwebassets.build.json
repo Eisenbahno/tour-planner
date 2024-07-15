@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "k1gQTEuobccZBrg4afbXtzio0EMZnb3OzdvBOfvYKgs=",
+  "Hash": "1Lz1PGcevIZhXLvzsCvjN8NoQToZHI3SmkeRHAz7uDY=",
   "Source": "Tour_Planner",
   "BasePath": "_content/Tour_Planner",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Backend/Backend.csproj",
+      "Identity": "C:\\Users\\Stefan\\Documents\\GitHub\\tour-planner\\Tour Planner\\Backend\\Backend.csproj",
       "Version": 2,
       "Source": "Backend",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
@@ -18,7 +18,7 @@
       "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
     },
     {
-      "Identity": "/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Shared/Shared.csproj",
+      "Identity": "C:\\Users\\Stefan\\Documents\\GitHub\\tour-planner\\Tour Planner\\Shared\\Shared.csproj",
       "Version": 2,
       "Source": "Shared",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
@@ -31,19 +31,19 @@
   ],
   "DiscoveryPatterns": [
     {
-      "Name": "Tour_Planner/wwwroot",
+      "Name": "Tour_Planner\\wwwroot",
       "Source": "Tour_Planner",
-      "ContentRoot": "/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/wwwroot/",
+      "ContentRoot": "C:\\Users\\Stefan\\Documents\\GitHub\\tour-planner\\Tour Planner\\Tour Planner\\wwwroot\\",
       "BasePath": "_content/Tour_Planner",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/Users/stefanrezk/.nuget/packages/mudblazor/6.20.0/staticwebassets/MudBlazor.min.css",
+      "Identity": "C:\\Users\\Stefan\\.nuget\\packages\\mudblazor\\6.21.0\\staticwebassets\\MudBlazor.min.css",
       "SourceId": "MudBlazor",
       "SourceType": "Package",
-      "ContentRoot": "/Users/stefanrezk/.nuget/packages/mudblazor/6.20.0/staticwebassets/",
+      "ContentRoot": "C:\\Users\\Stefan\\.nuget\\packages\\mudblazor\\6.21.0\\staticwebassets\\",
       "BasePath": "_content/MudBlazor",
       "RelativePath": "MudBlazor.min.css",
       "AssetKind": "All",
@@ -56,13 +56,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/stefanrezk/.nuget/packages/mudblazor/6.20.0/staticwebassets/MudBlazor.min.css"
+      "OriginalItemSpec": "C:\\Users\\Stefan\\.nuget\\packages\\mudblazor\\6.21.0\\staticwebassets\\MudBlazor.min.css"
     },
     {
-      "Identity": "/Users/stefanrezk/.nuget/packages/mudblazor/6.20.0/staticwebassets/MudBlazor.min.js",
+      "Identity": "C:\\Users\\Stefan\\.nuget\\packages\\mudblazor\\6.21.0\\staticwebassets\\MudBlazor.min.js",
       "SourceId": "MudBlazor",
       "SourceType": "Package",
-      "ContentRoot": "/Users/stefanrezk/.nuget/packages/mudblazor/6.20.0/staticwebassets/",
+      "ContentRoot": "C:\\Users\\Stefan\\.nuget\\packages\\mudblazor\\6.21.0\\staticwebassets\\",
       "BasePath": "_content/MudBlazor",
       "RelativePath": "MudBlazor.min.js",
       "AssetKind": "All",
@@ -75,13 +75,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/stefanrezk/.nuget/packages/mudblazor/6.20.0/staticwebassets/MudBlazor.min.js"
+      "OriginalItemSpec": "C:\\Users\\Stefan\\.nuget\\packages\\mudblazor\\6.21.0\\staticwebassets\\MudBlazor.min.js"
     },
     {
-      "Identity": "/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/wwwroot/app.css",
+      "Identity": "C:\\Users\\Stefan\\Documents\\GitHub\\tour-planner\\Tour Planner\\Tour Planner\\wwwroot\\app.css",
       "SourceId": "Tour_Planner",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/wwwroot/",
+      "ContentRoot": "C:\\Users\\Stefan\\Documents\\GitHub\\tour-planner\\Tour Planner\\Tour Planner\\wwwroot\\",
       "BasePath": "_content/Tour_Planner",
       "RelativePath": "app.css",
       "AssetKind": "All",
@@ -94,13 +94,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/app.css"
+      "OriginalItemSpec": "wwwroot\\app.css"
     },
     {
-      "Identity": "/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/wwwroot/favicon.ico",
+      "Identity": "C:\\Users\\Stefan\\Documents\\GitHub\\tour-planner\\Tour Planner\\Tour Planner\\wwwroot\\favicon.ico",
       "SourceId": "Tour_Planner",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/wwwroot/",
+      "ContentRoot": "C:\\Users\\Stefan\\Documents\\GitHub\\tour-planner\\Tour Planner\\Tour Planner\\wwwroot\\",
       "BasePath": "_content/Tour_Planner",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -113,13 +113,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/favicon.ico"
+      "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/wwwroot/js/map.js",
+      "Identity": "C:\\Users\\Stefan\\Documents\\GitHub\\tour-planner\\Tour Planner\\Tour Planner\\wwwroot\\js\\map.js",
       "SourceId": "Tour_Planner",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/wwwroot/",
+      "ContentRoot": "C:\\Users\\Stefan\\Documents\\GitHub\\tour-planner\\Tour Planner\\Tour Planner\\wwwroot\\",
       "BasePath": "_content/Tour_Planner",
       "RelativePath": "js/map.js",
       "AssetKind": "All",
@@ -132,7 +132,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/js/map.js"
+      "OriginalItemSpec": "wwwroot\\js\\map.js"
     }
   ]
 }

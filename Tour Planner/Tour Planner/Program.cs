@@ -1,5 +1,6 @@
 using Tour_Planner.Components;
 using MudBlazor.Services;
+using Shared.Service;
 
 
 namespace Tour_Planner;
@@ -15,6 +16,17 @@ public class Program
             .AddInteractiveServerComponents();
 
         builder.Services.AddMudServices();
+        
+        builder.Services.AddSingleton<HttpClient>(sp => 
+            new HttpClient { BaseAddress = new Uri("https://api.openrouteservice.org/") });
+        
+        builder.Services.AddSingleton<OpenRouteService>(sp =>
+        {
+            var httpClient = sp.GetRequiredService<HttpClient>();
+            var configuration = sp.GetRequiredService<IConfiguration>();
+            var apiKey = configuration["OpenRouteServiceApiKey"];
+            return new OpenRouteService(httpClient, configuration["OpenRouteServiceApiKey"]);
+        });
         
         var app = builder.Build();
 

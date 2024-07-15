@@ -1,38 +1,35 @@
-namespace Shared.Services;
-
-using System.Net.Http;
-using System.Net.Http.Json;
-using System.Threading.Tasks;
-
-public class OpenRouteService
+namespace Shared.Service
 {
-    private readonly HttpClient _httpClient;
-    private readonly string _apiKey;
+    using System.Net.Http;
+    using System.Net.Http.Headers;
+    using System.Threading.Tasks;
+    using Microsoft.Extensions.Configuration;
+    using Newtonsoft.Json.Linq;
 
-    public OpenRouteService(HttpClient httpClient, string apiKey)
+    public class OpenRouteService
     {
-        _httpClient = httpClient;
-        _apiKey = apiKey;
-    }
+        private readonly HttpClient _httpClient;
+        private readonly string? _apiKey;
 
-    public async Task<ORSResponse> GetDirectionsAsync(double startLat, double startLng, double endLat, double endLng)
-    {
-        var url = $"https://api.openrouteservice.org/v2/directions/driving-car?api_key={_apiKey}&start={startLng},{startLat}&end={endLng},{endLat}";
-        return await _httpClient.GetFromJsonAsync<ORSResponse>(url);
-    }
-}
+        public OpenRouteService(HttpClient httpClient, string? configuration)
+        {
+            _httpClient = httpClient;
+            _apiKey = configuration;
+        }
 
-public class ORSResponse
-{
-    public Route[] Routes { get; set; }
+        public async Task<string> GetRouteAsync(double startLat, double startLng, double endLat, double endLng)
+        {
+            var requestUrl =
+                $"v2/directions/driving-car?api_key={_apiKey}&start={startLng},{startLat}&end={endLng},{endLat}";
 
-    public class Route
-    {
-        public Geometry Geometry { get; set; }
-    }
+            var request = new HttpRequestMessage(HttpMethod.Get, requestUrl);
+            request.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-    public class Geometry
-    {
-        public double[][] Coordinates { get; set; }
+            var response = await _httpClient.SendAsync(request);
+            response.EnsureSuccessStatusCode();
+
+            var responseContent = await response.Content.ReadAsStringAsync();
+            return responseContent;
+        }
     }
 }

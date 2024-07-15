@@ -1,4 +1,4 @@
-﻿@inject Shared.Services.OpenRouteService OpenRouteService
+﻿@inject Shared.Service.OpenRouteService OpenRouteService
 @inject IJSRuntime JS
 
 @page "/"
@@ -42,7 +42,7 @@
             var endLat = 49.403221;
             var endLng = 8.684524;
 
-            var response = await OpenRouteService.GetDirectionsAsync(startLat, startLng, endLat, endLng);
+            var response = await OpenRouteService.GetRouteAsync(startLat, startLng, endLat, endLng);
 
 // Initialisiere die Karte und zeige die Route an
             await JS.InvokeVoidAsync("initMap", startLat, startLng, endLat, endLng, response);
