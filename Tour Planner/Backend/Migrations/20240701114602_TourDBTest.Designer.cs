@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Backend.Migrations
 {
     [DbContext(typeof(ToursDbContext))]
-    [Migration("20240603135725_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20240701114602_TourDBTest")]
+    partial class TourDBTest
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

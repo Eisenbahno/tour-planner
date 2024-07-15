@@ -1,5 +1,7 @@
 using Backend.DbContext;
+using Backend.Repository;
 using Microsoft.EntityFrameworkCore;
+using MudBlazor.Services;
 
 namespace Backend;
 
@@ -13,19 +15,14 @@ public class Program
         builder.Services.AddRazorComponents()
             .AddInteractiveServerComponents();
 
-        // builder.Services.AddMudServices();
-        // //TODO: Add other EF Services per Object
-        // builder.Services.AddDbContextFactory<ToursDbContext>((DbContextOptionsBuilder options) 
-        //     => options.UseSqlServer(builder.Configuration.GetConnectionString("Default") 
-        //                             ?? throw new NullReferenceException("No connection string in config!")));
-        
-        builder.Services.AddDbContextFactory<ToursDbContext>((DbContextOptionsBuilder options) =>
-            options.UseNpgsql(builder.Configuration.GetConnectionString("Default")
-                              ?? throw new NullReferenceException("No connection string in config!"))
-                .EnableSensitiveDataLogging()  // Optional: Aktiviert detaillierte Protokollierung
-                .LogTo(Console.WriteLine, LogLevel.Information));
+        builder.Services.AddMudServices();
+        //TODO: Add other EF Services per Object
+        builder.Services.AddDbContextFactory<ToursDbContext>((DbContextOptionsBuilder options) 
+            => options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection") 
+                                    ?? throw new NullReferenceException("No connection string in config!")));
 
-
+        builder.Services.AddScoped<TourRepository>();
+      
         var app = builder.Build();
         
         // Configure the HTTP request pipeline.
@@ -40,8 +37,6 @@ public class Program
 
         app.UseStaticFiles();
         app.UseAntiforgery();
-
-        
 
         app.Run();
     }

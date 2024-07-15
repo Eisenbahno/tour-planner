@@ -1,4 +1,9 @@
-﻿@page "/"
+﻿@inject Shared.Services.OpenRouteService OpenRouteService
+@inject IJSRuntime JS
+
+@page "/"
+
+<PageTitle>Tour Planner</PageTitle>
 
 <MudButtonGroup Color="Color.Primary" Variant="Variant.Outlined" Size="Size.Small">
     <MudButton>File</MudButton>
@@ -9,8 +14,43 @@
 <MudItem xs="12" sm="6" md="4">
     <MudAutocomplete T="string" Label="Search for tours..." @bind-Value="value" SearchFunc="@Search"
                      ResetValueOnEmptyText="@resetValueOnEmptyText"
-                     CoerceText="@coerceText" CoerceValue="@coerceValue" />
+                     CoerceText="@coerceText" CoerceValue="@coerceValue"/>
 </MudItem>
+
+<MudPaper Height="20px" Width="0px"></MudPaper>
+
+<MudTabs Elevation="4" Rounded="true" Color="@Color.Primary">
+    <MudTabPanel Text="General"/>
+    <MudTabPanel Text="Route"/>
+    <MudTabPanel Text="Misc"/>
+</MudTabs>
+
+@* MAP *@
+
+<h3>Map with OpenRouteService</h3>
+
+<div id="map" style="height: 500px;"></div>
+
+@code {
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            var startLat = 49.420577;
+            var startLng = 8.679037;
+            var endLat = 49.403221;
+            var endLng = 8.684524;
+
+            var response = await OpenRouteService.GetDirectionsAsync(startLat, startLng, endLat, endLng);
+
+// Initialisiere die Karte und zeige die Route an
+            await JS.InvokeVoidAsync("initMap", startLat, startLng, endLat, endLng, response);
+        }
+    }
+
+}
+
 
 @code
 {
@@ -19,11 +59,11 @@
     private bool coerceValue;
     private string value;
     private List<string> tours = new(); //TODO: connect tours list with backend
-    
+
     private async Task<IEnumerable<string>> Search(string value)
     {
         //TODO: In real life use an asynchronous function for fetching data from an api.
-        
+
 
         // if text is null or empty, show complete list
         if (string.IsNullOrEmpty(value))

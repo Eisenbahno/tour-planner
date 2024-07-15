@@ -1,6 +1,7 @@
 using Tour_Planner.Components;
 using MudBlazor.Services;
 
+
 namespace Tour_Planner;
 
 public class Program
@@ -14,7 +15,7 @@ public class Program
             .AddInteractiveServerComponents();
 
         builder.Services.AddMudServices();
-
+        
         var app = builder.Build();
 
         // Configure the HTTP request pipeline.

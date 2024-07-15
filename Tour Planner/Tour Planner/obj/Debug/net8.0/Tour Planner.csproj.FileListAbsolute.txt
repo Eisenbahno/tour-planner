@@ -24,6 +24,7 @@
 /Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/obj/Debug/net8.0/Tour Planner.AssemblyInfo.cs
 /Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/obj/Debug/net8.0/Tour Planner.csproj.CoreCompileInputs.cache
 /Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/obj/Debug/net8.0/Tour_Planner.MvcApplicationPartsAssemblyInfo.cache
+/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/obj/Debug/net8.0/Tour Planner.sourcelink.json
 /Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/obj/Debug/net8.0/staticwebassets.build.json
 /Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/obj/Debug/net8.0/staticwebassets.development.json
 /Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/obj/Debug/net8.0/staticwebassets/msbuild.Tour_Planner.Microsoft.AspNetCore.StaticWebAssets.props
@@ -38,26 +39,19 @@
 /Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/obj/Debug/net8.0/Tour_Planner.pdb
 /Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/obj/Debug/net8.0/Tour Planner.genruntimeconfig.cache
 /Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/obj/Debug/net8.0/ref/Tour_Planner.dll
+/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Backend.deps.json
+/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Backend.runtimeconfig.json
 /Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Shared.staticwebassets.runtime.json
-/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Shared.dll
-/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Shared.pdb
-/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Humanizer.dll
-/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.dll
-/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll
-/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Design.dll
-/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Relational.dll
-/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Microsoft.Extensions.DependencyModel.dll
-/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Mono.TextTemplating.dll
-/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/System.CodeDom.dll
-/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/obj/Debug/net8.0/Tour Planner.sourcelink.json
-/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Microsoft.AspNetCore.Components.WebAssembly.dll
-/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Microsoft.JSInterop.WebAssembly.dll
-/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Npgsql.dll
-/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Backend.staticwebassets.runtime.json
+/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Backend
 /Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Azure.Core.dll
 /Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Azure.Identity.dll
+/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Microsoft.AspNetCore.Components.WebAssembly.dll
 /Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Microsoft.Bcl.AsyncInterfaces.dll
 /Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Microsoft.Data.SqlClient.dll
+/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.dll
+/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Relational.dll
 /Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.SqlServer.dll
 /Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Microsoft.Identity.Client.dll
 /Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Microsoft.Identity.Client.Extensions.Msal.dll
@@ -67,8 +61,11 @@
 /Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.dll
 /Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 /Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
+/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Microsoft.JSInterop.WebAssembly.dll
 /Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Microsoft.SqlServer.Server.dll
 /Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Microsoft.Win32.SystemEvents.dll
+/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Npgsql.dll
+/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
 /Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/System.Configuration.ConfigurationManager.dll
 /Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/System.Drawing.Common.dll
 /Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll
@@ -89,9 +86,7 @@
 /Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll
 /Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
 /Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll
-/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Backend.deps.json
-/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Backend.runtimeconfig.json
-/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Backend.staticwebassets.runtime.json
-/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Backend
 /Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Backend.dll
+/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Shared.dll
 /Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Backend.pdb
+/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/bin/Debug/net8.0/Shared.pdb

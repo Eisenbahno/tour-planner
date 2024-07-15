@@ -14,25 +14,26 @@ public class ToursDbContext : Microsoft.EntityFrameworkCore.DbContext
     
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Tour>(entity =>
+        modelBuilder.Entity<Tour>(tour =>
         {
-            entity.HasKey(e => e.Id);
-            entity.Property(e => e.Name).IsRequired();
-            entity.Property(e => e.Distance).IsRequired();
-            entity.Property(e => e.Duration).IsRequired();
-            entity.Property(e => e.TourDescription).IsRequired();
-            entity.Property(e => e.TransportationType).IsRequired();
-            entity.Property(e => e.From).IsRequired();
-            entity.Property(e => e.To).IsRequired();
-            entity.Property(e => e.Image).IsRequired();
+            tour.HasKey(t => t.Id);
+            tour.Property(t => t.Name).IsRequired();
+            tour.Property(t => t.Distance).IsRequired();
+            tour.Property(t => t.Duration).IsRequired();
+            tour.Property(t => t.TourDescription).IsRequired();
+            tour.Property(t => t.TransportationType).IsRequired();
+            tour.Property(t => t.From).IsRequired();
+            tour.Property(t => t.To).IsRequired();
+            tour.Property(t => t.Image).IsRequired();
+            tour.HasMany(t => t.TourLogs);
         });
 
-        modelBuilder.Entity<TourLog>(entity =>
+        modelBuilder.Entity<TourLog>(tourLog =>
         {
-            entity.HasKey(e => e.IdTourLog);
-            entity.Property(e => e.Comment).IsRequired();
+            tourLog.HasKey(tl => tl.IdTourLog);
+            tourLog.Property(tl => tl.Comment).IsRequired();
             // Define foreign key relationship
-            entity.HasOne(d => d.Tour)
+            tourLog.HasOne(d => d.Tour)
                 .WithMany()
                 .HasForeignKey(d => d.TourId)
                 .OnDelete(DeleteBehavior.Cascade);

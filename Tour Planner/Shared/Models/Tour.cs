@@ -15,7 +15,9 @@ public class Tour
     public TimeSpan Duration { get; set; }
     public string Image { get; set; }
     
-    public Tour(string name, string tourDescription, string from, string to, TransportationType transportationType, double distance, TimeSpan duration, string image)
+    public IEnumerable<TourLog> TourLogs { get; set; }
+    
+    public Tour(string name, string tourDescription, string from, string to, TransportationType transportationType, double distance, TimeSpan duration, string image, IEnumerable<TourLog> tourLogs)
     {
         Name = name;
         TourDescription = tourDescription;
@@ -25,5 +27,6 @@ public class Tour
         Distance = distance;
         Duration = duration;
         Image = image;
+        tourLogs = new List<TourLog>();
     }
 }
