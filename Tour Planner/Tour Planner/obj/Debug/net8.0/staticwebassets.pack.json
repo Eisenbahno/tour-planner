@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Stefan\\Documents\\GitHub\\tour-planner\\Tour Planner\\Tour Planner\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
       "Id": "C:\\Users\\Stefan\\Documents\\GitHub\\tour-planner\\Tour Planner\\Tour Planner\\wwwroot\\js\\map.js",
       "PackagePath": "staticwebassets\\js\\map.js"
     },

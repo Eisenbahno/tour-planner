@@ -257,7 +257,7 @@
           "dependencies": {
             "MudBlazor": {
               "target": "Package",
-              "version": "[6.*, )"
+              "version": "[6.21.0, )"
             }
           },
           "imports": [

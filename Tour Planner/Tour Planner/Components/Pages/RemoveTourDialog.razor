@@ -1,0 +1,20 @@
+@using MudBlazor
+@inject MudBlazor.IDialogService DialogService
+
+@code {
+    [CascadingParameter] MudBlazor.MudDialogInstance MudDialog { get; set; }
+
+    private void Cancel() => MudDialog.Cancel();
+    private void Confirm() => MudDialog.Close(DialogResult.Ok(true));
+}
+
+<Dialog>
+    <DialogTitle>Confirm Removal</DialogTitle>
+    <DialogContent>
+        <MudText Typo="Typo.body1">Are you sure you want to remove the selected tours?</MudText>
+    </DialogContent>
+    <DialogActions>
+        <MudButton Color="Color.Secondary" OnClick="Cancel">Cancel</MudButton>
+        <MudButton Color="Color.Primary" OnClick="Confirm">Remove</MudButton>
+    </DialogActions>
+</Dialog>

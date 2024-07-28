@@ -1,20 +1,29 @@
-﻿<MudContainer>
+﻿@using Backend.DbContext
+@using Backend.Repository
+@using Shared.Models
+@using Tour_Planner.Components.Pages
+<MudContainer>
     <MudPaper Height="20px" Width="0px" Square="true"></MudPaper>
 
     <MudText Typo="Typo.h5" ; Align="Align.Justify">
         Manage Tours
     </MudText>
-    
+
     <MudDivider/>
-    
+
     <MudPaper Height="20" Width="0px"></MudPaper>
 
     <MudList Clickable="true">
-        <MudListItem Text="Add" Icon="@Icons.Material.Filled.Add"/>
+        <MudListItem Text="Add" Icon="@Icons.Material.Filled.Add" OnClick="AddTourDialog"/>
         <MudDivider DividerType="DividerType.Middle"/>
-        <MudListItem Text="Remove" Icon="@Icons.Material.Filled.Remove"/>
+        <MudListItem Text="Remove" Icon="@Icons.Material.Filled.Remove" OnClick="RemoveTourDialog"/>
         <MudDivider DividerType="DividerType.Middle"/>
-        <MudListItem Text="More" Icon="@Icons.Material.Filled.MoreHoriz"/>
+        <MudListItem Text="More" Icon="@Icons.Material.Filled.GeneratingTokens">
+            <NestedList>
+                <MudListItem>Tour Report</MudListItem>
+                <MudListItem>Summarized Report</MudListItem>
+            </NestedList>
+        </MudListItem>
         <MudDivider DividerType="DividerType.Middle"/>
     </MudList>
 
@@ -27,7 +36,7 @@
     <MudDivider/>
 
     <MudList Clickable="true">
-        @foreach (var tour in Tours)
+        @foreach (var tour in AllTours)
         {
             <MudListItem>
                 @tour
@@ -39,12 +48,43 @@
 
 @code {
 
-    private List<string> Tours = new List<string>
+    private async Task AddTourDialog()
     {
-        "Waldviertelweg",
-        "Stadtwanderweg 4",
-        "Der Höllentrip",
-        "Payerbach Schmerz - 2."
-    };
+        var parameters = new DialogParameters { ["Tour"] = new Tour() };
+        var service = new DialogService();
+        var dialog = await service.ShowAsync<AddTourDialog>("Add Tour", parameters);
+        var result = await dialog.Result;
+
+        if (!result.Canceled)
+        {
+            //TODO: needs a fix
+            Tour? newTour = result.Data as Tour;
+            TourRepository repository = new TourRepository(null);
+            await repository.AddTourAsync(newTour);
+        }
+    }
+
+    private async Task RemoveTourDialog()
+    {
+        var parameters = new DialogParameters { ["Tour"] = new Tour() };
+        var service = new DialogService();
+        var dialog = await service.ShowAsync<RemoveTourDialog>("Remove Tours", parameters);
+        var result = await dialog.Result;
+
+        if (!result.Canceled)
+        {
+            var selectedTours = result.Data as List<Tour>;
+            TourRepository repository = new TourRepository(null);
+
+            await Task.WhenAll(selectedTours!.Select(tour => repository.RemoveTourAsync(tour.Id)));
+        }
+    }
+
+}
+
+@code {
+
+    private static TourRepository _repository = new (null);
+    public List<Tour> AllTours = _repository.GetAllToursWithLogsAsync().Result;
 
 }

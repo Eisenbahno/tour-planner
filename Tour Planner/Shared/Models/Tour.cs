@@ -16,6 +16,11 @@ public class Tour
     public string Image { get; set; }
     
     public IEnumerable<TourLog> TourLogs { get; set; }
+
+    public Tour()
+    {
+        
+    }
     
     public Tour(string name, string tourDescription, string from, string to, TransportationType transportationType, double distance, TimeSpan duration, string image, IEnumerable<TourLog> tourLogs)
     {

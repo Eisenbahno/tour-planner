@@ -1,0 +1,31 @@
+@using Shared.Models
+@using MudBlazor
+@inject MudBlazor.IDialogService DialogService
+
+@code {
+    [CascadingParameter] MudBlazor.MudDialogInstance MudDialog { get; set; }
+    [Parameter] public Tour Tour { get; set; } = new();
+
+    private void Cancel() => MudDialog.Cancel();
+    private void Save() => MudDialog.Close(DialogResult.Ok(Tour));
+}
+
+<Dialog>
+    <DialogTitle>Tour Details</DialogTitle>
+    <DialogContent>
+        <MudForm>
+            <MudTextField Label="Name" @bind-Value="Tour.Name" Required="true"/>
+            <MudTextField Label="Tour Description" @bind-Value="Tour.TourDescription"/>
+            <MudTextField Label="From" @bind-Value="Tour.From" Required="true"/>
+            <MudTextField Label="To" @bind-Value="Tour.To" Required="true"/>
+            <MudTextField Label="Transportation Type" @bind-Value="Tour.TransportationType" Required="true"/>
+            <MudTextField Label="Distance" @bind-Value="Tour.Distance" Required="true"/>
+            <MudTextField Label="Duration" @bind-Value="Tour.Duration" Required="true"/>
+            <MudTextField Label="Image" @bind-Value="Tour.Image" />
+        </MudForm>
+    </DialogContent>
+    <DialogActions>
+        <MudButton Color="Color.Secondary" OnClick="Cancel">Cancel</MudButton>
+        <MudButton Color="Color.Primary" OnClick="Save">Save</MudButton>
+    </DialogActions>
+</Dialog>

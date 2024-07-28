@@ -35,4 +35,19 @@ public class TourRepository(ToursDbContext dbContext)
             .FirstOrDefaultAsync(tour => tour.Id == id);
     }
     
+    public async Task RemoveTourAsync(int id)
+    {
+        var tour = await ByIdAsync(id);
+        if (tour != null)
+        {
+            dbContext.Tours.Remove(tour);
+            await dbContext.SaveChangesAsync();
+        }
+    }
+    
+    public async Task<List<Tour>> GetAllToursWithLogsAsync()
+    {
+        return await dbContext.Tours
+            .Include(tour => tour.TourLogs)
+            .ToListAsync();
 }

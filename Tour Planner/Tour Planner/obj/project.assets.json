@@ -4427,7 +4427,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "Backend >= 1.0.0",
-      "MudBlazor >= 6.*",
+      "MudBlazor >= 6.21.0",
       "Shared >= 1.0.0"
     ]
   },
@@ -4484,7 +4484,7 @@
         "dependencies": {
           "MudBlazor": {
             "target": "Package",
-            "version": "[6.*, )"
+            "version": "[6.21.0, )"
           }
         },
         "imports": [

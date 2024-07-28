@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1Lz1PGcevIZhXLvzsCvjN8NoQToZHI3SmkeRHAz7uDY=",
+  "Hash": "TwTYpdqnI5leUMzehxLtnqMYBHzQzDhkcPzVvoILuYM=",
   "Source": "Tour_Planner",
   "BasePath": "_content/Tour_Planner",
   "Mode": "Default",
@@ -114,6 +114,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Stefan\\Documents\\GitHub\\tour-planner\\Tour Planner\\Tour Planner\\wwwroot\\index.html",
+      "SourceId": "Tour_Planner",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Stefan\\Documents\\GitHub\\tour-planner\\Tour Planner\\Tour Planner\\wwwroot\\",
+      "BasePath": "_content/Tour_Planner",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
       "Identity": "C:\\Users\\Stefan\\Documents\\GitHub\\tour-planner\\Tour Planner\\Tour Planner\\wwwroot\\js\\map.js",
