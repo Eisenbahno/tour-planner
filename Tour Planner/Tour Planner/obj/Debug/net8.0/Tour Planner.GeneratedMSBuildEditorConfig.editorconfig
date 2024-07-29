@@ -22,16 +22,28 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Stefan/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/Components/Dialogs/AddTourDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xEaWFsb2dzXEFkZFRvdXJEaWFsb2cucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Stefan/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/Components/Dialogs/AddTourLogDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xEaWFsb2dzXEFkZFRvdXJMb2dEaWFsb2cucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Stefan/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/Components/Dialogs/PdfGenerationSuccess.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xEaWFsb2dzXFBkZkdlbmVyYXRpb25TdWNjZXNzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Stefan/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/Components/Dialogs/RemoveTourDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xEaWFsb2dzXFJlbW92ZVRvdXJEaWFsb2cucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Stefan/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/Components/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Stefan/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/Components/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Stefan/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/Components/Pages/AddTourDialog.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZGRUb3VyRGlhbG9nLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Stefan/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/Components/Pages/Error.razor]
@@ -42,8 +54,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Stefan/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/Components/Pages/RemoveTourDialog.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZW1vdmVUb3VyRGlhbG9nLnJhem9y
+[C:/Users/Stefan/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/Components/PdfGenerationFail.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQZGZHZW5lcmF0aW9uRmFpbC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Stefan/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/Components/Routes.razor]

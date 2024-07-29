@@ -181,3 +181,4 @@ C:\Users\Stefan\Documents\GitHub\tour-planner\Tour Planner\Backend\obj\Debug\net
 C:\Users\Stefan\Documents\GitHub\tour-planner\Tour Planner\Backend\obj\Debug\net8.0\Backend.genruntimeconfig.cache
 C:\Users\Stefan\Documents\GitHub\tour-planner\Tour Planner\Backend\obj\Debug\net8.0\ref\Backend.dll
 C:\Users\Stefan\Documents\GitHub\tour-planner\Tour Planner\Backend\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Stefan\Documents\GitHub\tour-planner\Tour Planner\Backend\bin\Debug\net8.0\itextsharp.dll

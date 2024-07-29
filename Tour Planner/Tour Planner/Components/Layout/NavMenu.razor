@@ -1,11 +1,15 @@
 ﻿@using Backend.DbContext
+@using Backend.PDF_Report
 @using Backend.Repository
+@using Microsoft.EntityFrameworkCore
 @using Shared.Models
-@using Tour_Planner.Components.Pages
+@using Tour_Planner.Components.Dialogs
+@inject IDialogService DialogService
+
 <MudContainer>
     <MudPaper Height="20px" Width="0px" Square="true"></MudPaper>
 
-    <MudText Typo="Typo.h5" ; Align="Align.Justify">
+    <MudText Typo="Typo.h5" Align="Align.Justify">
         Manage Tours
     </MudText>
 
@@ -14,14 +18,19 @@
     <MudPaper Height="20" Width="0px"></MudPaper>
 
     <MudList Clickable="true">
-        <MudListItem Text="Add" Icon="@Icons.Material.Filled.Add" OnClick="AddTourDialog"/>
+        <MudListItem Text="Add" Icon="@Icons.Material.Filled.Add">
+            <NestedList>
+                <MudListItem OnClick="AddTourDialog">Tour</MudListItem>
+                <MudListItem OnClick="AddTourLogDialog">Tour Log</MudListItem>
+            </NestedList>
+        </MudListItem>
         <MudDivider DividerType="DividerType.Middle"/>
         <MudListItem Text="Remove" Icon="@Icons.Material.Filled.Remove" OnClick="RemoveTourDialog"/>
         <MudDivider DividerType="DividerType.Middle"/>
         <MudListItem Text="More" Icon="@Icons.Material.Filled.GeneratingTokens">
             <NestedList>
-                <MudListItem>Tour Report</MudListItem>
-                <MudListItem>Summarized Report</MudListItem>
+                <MudListItem OnClick="GenerateSingleTourReport">Tour Report</MudListItem>
+                <MudListItem OnClick="GenerateSummarizedTourReport">Summarized Report</MudListItem>
             </NestedList>
         </MudListItem>
         <MudDivider DividerType="DividerType.Middle"/>
@@ -29,17 +38,24 @@
 
     <MudPaper Height="30px" Width="0" Square="true"></MudPaper>
 
-    <MudText Typo="Typo.h5" ; Align="Align.Justify">
+    <MudText Typo="Typo.h5" Align="Align.Justify">
         Tours
     </MudText>
 
     <MudDivider/>
 
+    <MudSelect T="Tour" Label="Select Tour" @bind-Value="selectedTour" Required="true">
+        @foreach (var tour in AllTours)
+        {
+            <MudSelectItem Value="@tour">@tour.Name</MudSelectItem>
+        }
+    </MudSelect>
+
     <MudList Clickable="true">
         @foreach (var tour in AllTours)
         {
             <MudListItem>
-                @tour
+                @tour.Name
             </MudListItem>
             <MudDivider DividerType="DividerType.Middle"/>
         }
@@ -47,44 +63,88 @@
 </MudContainer>
 
 @code {
+    private static ToursDbContext _dbContext = new(new DbContextOptions<ToursDbContext>());
+    private static TourRepository _repository = new(_dbContext);
+    public List<Tour> AllTours = _repository.GetAllToursWithLogsAsync().Result;
+    private Tour? selectedTour = new();
 
     private async Task AddTourDialog()
     {
         var parameters = new DialogParameters { ["Tour"] = new Tour() };
-        var service = new DialogService();
-        var dialog = await service.ShowAsync<AddTourDialog>("Add Tour", parameters);
+        var dialog = await DialogService.ShowAsync<AddTourDialog>("Add Tour", parameters);
         var result = await dialog.Result;
 
         if (!result.Canceled)
         {
-            //TODO: needs a fix
-            Tour? newTour = result.Data as Tour;
-            TourRepository repository = new TourRepository(null);
-            await repository.AddTourAsync(newTour);
+            var newTour = result.Data as Tour;
+            await _repository.AddTourAsync(newTour!);
+            AllTours = await _repository.GetAllToursWithLogsAsync();
         }
+    }
+
+    private async Task GenerateSingleTourReport()
+    {
+        SingleTourReport report = new SingleTourReport();
+        var task = report.GenerateTourReportAsync(selectedTour!);
+
+        if (task.Result.Value)
+            await DialogService.ShowAsync<PdfGenerationSuccess>();
+        else
+            await DialogService.ShowAsync<PdfGenerationFail>();
+    }
+
+    private async Task GenerateSummarizedTourReport()
+    {
+        SummarizedReport report = new SummarizedReport();
+        var task = report.GenerateSummarizedTourReportAsync(AllTours);
+
+        if (task.Result)
+            await DialogService.ShowAsync<PdfGenerationSuccess>();
+        else
+            await DialogService.ShowAsync<PdfGenerationFail>();
+    }
+
+    private async Task AddTourLogDialog()
+    {
+        if (selectedTour == null) return;
+
+        var parameters = new DialogParameters { ["Tour"] = selectedTour };
+        var dialog = await DialogService.ShowAsync<AddTourLogDialog>("Add Tour Log", parameters);
+        var result = await dialog.Result;
+
+        if (!result.Canceled)
+        {
+            var newTourLog = result.Data as TourLog;
+            if (RatingValidation(newTourLog!.Rating) != null)
+                return;
+            
+            await _repository.AddTourLogAsync(newTourLog, selectedTour);
+            AllTours = await _repository.GetAllToursWithLogsAsync();
+        }
+    }
+
+    private string RatingValidation(int value)
+    {
+        if (value < 1 || value > 5)
+        {
+            return "Rating must be between 1 and 5.";
+        }
+
+        return null;
     }
 
     private async Task RemoveTourDialog()
     {
         var parameters = new DialogParameters { ["Tour"] = new Tour() };
-        var service = new DialogService();
-        var dialog = await service.ShowAsync<RemoveTourDialog>("Remove Tours", parameters);
+        var dialog = await DialogService.ShowAsync<RemoveTourDialog>("Remove Tours", parameters);
         var result = await dialog.Result;
 
         if (!result.Canceled)
         {
             var selectedTours = result.Data as List<Tour>;
-            TourRepository repository = new TourRepository(null);
-
-            await Task.WhenAll(selectedTours!.Select(tour => repository.RemoveTourAsync(tour.Id)));
+            await Task.WhenAll(selectedTours!.Select(tour => _repository.RemoveTourAsync(tour.Id)));
+            AllTours = await _repository.GetAllToursWithLogsAsync();
         }
     }
-
-}
-
-@code {
-
-    private static TourRepository _repository = new (null);
-    public List<Tour> AllTours = _repository.GetAllToursWithLogsAsync().Result;
 
 }

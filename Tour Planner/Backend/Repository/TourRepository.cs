@@ -27,14 +27,14 @@ public class TourRepository(ToursDbContext dbContext)
         //Get Tour by ID
         return await dbContext.Tours.AsQueryable().FirstOrDefaultAsync(tour => tour.Id == id);
     }
-    
+
     public async Task<Tour?> ByIdWithTourLogsAsync(int id)
     {
         return await dbContext.Tours.AsQueryable()
             .Include(tour => tour.TourLogs)
             .FirstOrDefaultAsync(tour => tour.Id == id);
     }
-    
+
     public async Task RemoveTourAsync(int id)
     {
         var tour = await ByIdAsync(id);
@@ -44,10 +44,11 @@ public class TourRepository(ToursDbContext dbContext)
             await dbContext.SaveChangesAsync();
         }
     }
-    
+
     public async Task<List<Tour>> GetAllToursWithLogsAsync()
     {
         return await dbContext.Tours
             .Include(tour => tour.TourLogs)
             .ToListAsync();
+    }
 }

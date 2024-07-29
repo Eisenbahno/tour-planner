@@ -1,0 +1,37 @@
+@using Shared.Models
+@using MudBlazor
+@inject MudBlazor.IDialogService DialogService
+
+<Dialog>
+    <DialogTitle>Add Tour Log</DialogTitle>
+    <DialogContent>
+        <MudForm>
+            <MudDatePicker Label="Date and Time" @bind-Value="_tourLog.DateTime" Required="true" />
+            <MudTextField Label="Comment" @bind-Value="_tourLog.Comment" />
+            <MudTextField Label="Difficulty" @bind-Value="_tourLog.Difficulty" Required="true" />
+            <MudTextField Label="Total Distance" @bind-Value="_tourLog.TotalDistance" Required="true" />
+            <MudTimePicker Label="Total Time" @bind-Value="_tourLog.TotalTime" Required="true" />
+            <MudTextField Label="Rating" @bind-Value="_tourLog.Rating" Required="true" />
+        </MudForm>
+    </DialogContent>
+    <DialogActions>
+        <MudButton Color="Color.Secondary" OnClick="Cancel">Cancel</MudButton>
+        <MudButton Color="Color.Primary" OnClick="Save">Save</MudButton>
+    </DialogActions>
+</Dialog>
+
+@code {
+    [CascadingParameter] MudBlazor.MudDialogInstance MudDialog { get; set; }
+    [Parameter] public Tour Tour { get; set; }
+
+    private TourLog _tourLog = new TourLog();
+
+    protected override void OnInitialized()
+    {
+        _tourLog.TourId = Tour.Id;
+        _tourLog.Tour = Tour;
+    }
+
+    private void Cancel() => MudDialog.Cancel();
+    private void Save() => MudDialog.Close(DialogResult.Ok(_tourLog));
+}

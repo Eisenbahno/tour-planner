@@ -13,6 +13,8 @@ public class TourLog
         public int Difficulty { get; set; } // Assuming difficulty is an integer scale
         public double TotalDistance { get; set; } // Assuming total distance is in kilometers or miles
         public TimeSpan TotalTime { get; set; } // TimeSpan to represent total time taken
+        
+        [Range(1, 5, ErrorMessage = "Rating must be between 1 and 5.")]
         public int Rating { get; set; } // Assuming rating is an integer scale
 
         [ForeignKey("Tour")] // ForeignKey attribute, pointing to the Tour class

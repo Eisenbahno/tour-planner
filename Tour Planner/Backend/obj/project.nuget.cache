@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "qVdii4G30zEtHoFddIF+ZRFDYcixLN+EPCK3w0ftKG57tp5QTjcW99rHMVjvibyn0amHbspBHyAQs0l1Dt6AwQ==",
+  "dgSpecHash": "oXR8cb1LWZwOLiLaimB2e2i+Yf7P8d2yPga5uIcHAAJz+fCRvUso1xl6kZYwdPeXAnwTQLU0FC8sTPMyBMmPKg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Stefan\\Documents\\GitHub\\tour-planner\\Tour Planner\\Backend\\Backend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Stefan\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Stefan\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\Stefan\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\Stefan\\.nuget\\packages\\itextsharp\\5.5.13\\itextsharp.5.5.13.nupkg.sha512",
     "C:\\Users\\Stefan\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.3\\microsoft.aspnetcore.authorization.8.0.3.nupkg.sha512",
     "C:\\Users\\Stefan\\.nuget\\packages\\microsoft.aspnetcore.components\\8.0.3\\microsoft.aspnetcore.components.8.0.3.nupkg.sha512",
     "C:\\Users\\Stefan\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\8.0.3\\microsoft.aspnetcore.components.analyzers.8.0.3.nupkg.sha512",
@@ -103,6 +104,16 @@
       "warningLevel": 1,
       "message": "Package 'Npgsql' 7.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-x9vc-6hfv-hg8c",
       "libraryId": "Npgsql",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'iTextSharp 5.5.13' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
+      "libraryId": "iTextSharp",
       "targetGraphs": [
         "net8.0"
       ]
