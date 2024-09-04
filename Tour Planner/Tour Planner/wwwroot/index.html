@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<script>
+    function saveFile(folderName, content) {
+        window.showDirectoryPicker().then(async (directoryHandle) => {
+            const newFolder = await directoryHandle.getDirectoryHandle(folderName, { create: true });
+            const newFileHandle = await newFolder.getFileHandle('tours.json', { create: true });
+
+            const writable = await newFileHandle.createWritable();
+            await writable.write(content);
+            await writable.close();
+        });
+    }
+</script>
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />

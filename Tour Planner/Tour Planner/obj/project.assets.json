@@ -1491,6 +1491,7 @@
           "Microsoft.EntityFrameworkCore": "7.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.0",
           "MudBlazor": "6.0.0",
+          "Newtonsoft.Json": "13.0.3",
           "Npgsql": "7.0.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.0",
           "Shared": "1.0.0",
@@ -4453,46 +4454,40 @@
     "net8.0": [
       "Backend >= 1.0.0",
       "MudBlazor >= 6.21.0",
+      "Newtonsoft.Json >= 13.0.3",
       "Shared >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Stefan\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/Users/stefanrezk/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Stefan\\Documents\\GitHub\\tour-planner\\Tour Planner\\Tour Planner\\Tour Planner.csproj",
+      "projectUniqueName": "/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/Tour Planner.csproj",
       "projectName": "Tour_Planner",
-      "projectPath": "C:\\Users\\Stefan\\Documents\\GitHub\\tour-planner\\Tour Planner\\Tour Planner\\Tour Planner.csproj",
-      "packagesPath": "C:\\Users\\Stefan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Stefan\\Documents\\GitHub\\tour-planner\\Tour Planner\\Tour Planner\\obj\\",
+      "projectPath": "/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/Tour Planner.csproj",
+      "packagesPath": "/Users/stefanrezk/.nuget/packages/",
+      "outputPath": "/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Stefan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/stefanrezk/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Stefan\\Documents\\GitHub\\tour-planner\\Tour Planner\\Backend\\Backend.csproj": {
-              "projectPath": "C:\\Users\\Stefan\\Documents\\GitHub\\tour-planner\\Tour Planner\\Backend\\Backend.csproj"
+            "/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Backend/Backend.csproj": {
+              "projectPath": "/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Backend/Backend.csproj"
             },
-            "C:\\Users\\Stefan\\Documents\\GitHub\\tour-planner\\Tour Planner\\Shared\\Shared.csproj": {
-              "projectPath": "C:\\Users\\Stefan\\Documents\\GitHub\\tour-planner\\Tour Planner\\Shared\\Shared.csproj"
+            "/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Shared/Shared.csproj": {
+              "projectPath": "/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Shared/Shared.csproj"
             }
           }
         }
@@ -4510,6 +4505,10 @@
           "MudBlazor": {
             "target": "Package",
             "version": "[6.21.0, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.3, )"
           }
         },
         "imports": [
@@ -4531,7 +4530,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\Stefan\\.dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/Users/stefanrezk/.dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   },

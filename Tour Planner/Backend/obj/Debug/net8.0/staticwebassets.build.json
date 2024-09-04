@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "CR/xj0gCouwCPDo2OeSrWrxe6qsudA1iB7r3iy3E4mQ=",
+  "Hash": "rS6O0doGUBAN04nkQeaDQhyaJaY/KKvheWaKcg6DiC8=",
   "Source": "Backend",
   "BasePath": "_content/Backend",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\Users\\Stefan\\Documents\\GitHub\\tour-planner\\Tour Planner\\Shared\\Shared.csproj",
+      "Identity": "/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Shared/Shared.csproj",
       "Version": 2,
       "Source": "Shared",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
@@ -21,10 +21,10 @@
   "DiscoveryPatterns": [],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Stefan\\.nuget\\packages\\mudblazor\\6.21.0\\staticwebassets\\MudBlazor.min.css",
+      "Identity": "/Users/stefanrezk/.nuget/packages/mudblazor/6.21.0/staticwebassets/MudBlazor.min.css",
       "SourceId": "MudBlazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Stefan\\.nuget\\packages\\mudblazor\\6.21.0\\staticwebassets\\",
+      "ContentRoot": "/Users/stefanrezk/.nuget/packages/mudblazor/6.21.0/staticwebassets/",
       "BasePath": "_content/MudBlazor",
       "RelativePath": "MudBlazor.min.css",
       "AssetKind": "All",
@@ -37,13 +37,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Stefan\\.nuget\\packages\\mudblazor\\6.21.0\\staticwebassets\\MudBlazor.min.css"
+      "OriginalItemSpec": "/Users/stefanrezk/.nuget/packages/mudblazor/6.21.0/staticwebassets/MudBlazor.min.css"
     },
     {
-      "Identity": "C:\\Users\\Stefan\\.nuget\\packages\\mudblazor\\6.21.0\\staticwebassets\\MudBlazor.min.js",
+      "Identity": "/Users/stefanrezk/.nuget/packages/mudblazor/6.21.0/staticwebassets/MudBlazor.min.js",
       "SourceId": "MudBlazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Stefan\\.nuget\\packages\\mudblazor\\6.21.0\\staticwebassets\\",
+      "ContentRoot": "/Users/stefanrezk/.nuget/packages/mudblazor/6.21.0/staticwebassets/",
       "BasePath": "_content/MudBlazor",
       "RelativePath": "MudBlazor.min.js",
       "AssetKind": "All",
@@ -56,7 +56,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Stefan\\.nuget\\packages\\mudblazor\\6.21.0\\staticwebassets\\MudBlazor.min.js"
+      "OriginalItemSpec": "/Users/stefanrezk/.nuget/packages/mudblazor/6.21.0/staticwebassets/MudBlazor.min.js"
     }
   ]
 }

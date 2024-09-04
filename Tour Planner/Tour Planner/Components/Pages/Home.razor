@@ -2,21 +2,35 @@
 @inject IJSRuntime JS
 
 @page "/"
+@using System.Collections.ObjectModel
+@using Backend.DbContext
+@using Backend.Repository
+@using Microsoft.EntityFrameworkCore
+@using Newtonsoft.Json
+@using Shared.Models
 
 
 <PageTitle>Tour Planner</PageTitle>
 
 <MudButtonGroup Color="Color.Primary" Variant="Variant.Outlined" Size="Size.Small">
     <MudButton>File</MudButton>
+    <MudMenuItem>
+        <InputFile @ref="fileInput" OnChange="HandleFileSelected" style="display: none;"/>
+        <MudButton OnClick="TriggerFileInput">Import</MudButton>
+        <MudButton OnClick="OpenExportDialog">Export</MudButton>
+    </MudMenuItem>
     <MudButton>Edit</MudButton>
     <MudButton>Options</MudButton>
 </MudButtonGroup>
 
 <MudItem xs="12" sm="6" md="4">
-    <MudAutocomplete T="string" Label="Search for tours..." @bind-Value="value" SearchFunc="@Search"
-                     ResetValueOnEmptyText="@resetValueOnEmptyText"
-                     CoerceText="@coerceText" CoerceValue="@coerceValue"/>
+    <MudAutocomplete T="string" Label="Search for tours..." @bind-Value="value"
+                     SearchFunc="@Search"
+                     ResetValueOnEmptyText="true"
+                     CoerceText="true"
+                     CoerceValue="true"/>
 </MudItem>
+
 
 <MudPaper Height="20px" Width="0px"></MudPaper>
 
@@ -26,13 +40,64 @@
     <MudTabPanel Text="Misc"/>
 </MudTabs>
 
-@* MAP *@
+<MudDialog @bind-IsOpen="_exportDialogOpen">
+    <MudText>Select Tours to Export</MudText>
+    <DialogContent>
+        @foreach (var tour in tours)
+        {
+            <MudCheckBox @bind-Checked="tour.IsSelected" Label="@tour.Name"/>
+        }
+    </DialogContent>
+    <DialogActions>
+        <MudButton OnClick="ExportSelectedTours" Color="Color.Primary">Export</MudButton>
+        <MudButton OnClick="CloseExportDialog" Color="Color.Secondary">Cancel</MudButton>
+    </DialogActions>
+</MudDialog>
+
 
 <h3>Map with OpenRouteService</h3>
 
 <div id="map" style="height: 500px;"></div>
 
 @code {
+
+    private bool _exportDialogOpen = false;
+    
+    private List<Tour> tours;
+    
+    private ElementReference fileInputRef;
+    private Tour importedTour;
+    private InputFile fileInput;
+
+    protected override async Task OnInitializedAsync()
+    {
+        tours = await _repository.GetAllToursWithLogsAsync();
+    }
+
+    private void OpenExportDialog()
+    {
+        _exportDialogOpen = true;
+    }
+
+    private void CloseExportDialog()
+    {
+        _exportDialogOpen = false;
+    }
+
+    private async Task ExportSelectedTours()
+    {
+        var selectedTours = tours.Where(t => t.IsSelected).ToList();
+        if (selectedTours.Count == 0)
+        {
+            return;
+        }
+
+        var jsonContent = JsonConvert.SerializeObject(selectedTours);
+
+        await JS.InvokeVoidAsync("saveFile", "Exported Tours", jsonContent);
+
+        CloseExportDialog();
+    }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
@@ -45,25 +110,48 @@
 
             var response = await OpenRouteService.GetRouteAsync(startLat, startLng, endLat, endLng);
 
-// Initialisiere die Karte und zeige die Route an
             await JS.InvokeVoidAsync("initMap", startLat, startLng, endLat, endLng, response);
         }
     }
 
-    private bool resetValueOnEmptyText;
-    private bool coerceText;
-    private bool coerceValue;
+    private bool resetValueOnEmptyText = true;
+    private bool coerceText = true;
+    private bool coerceValue = true;
     private string value;
-    private List<string> tours = new(); //TODO: connect tours list with backend
+
+    private static ToursDbContext _dbContext = new(new DbContextOptions<ToursDbContext>());
+    private static TourRepository _repository = new(_dbContext);
 
     private async Task<IEnumerable<string>> Search(string value)
     {
-        //TODO: In real life use an asynchronous function for fetching data from an api.
-
-
-        // if text is null or empty, show complete list
         if (string.IsNullOrEmpty(value))
-            return tours;
-        return tours.Where(x => x.Contains(value, StringComparison.InvariantCultureIgnoreCase));
+            return tours.Select(t => t.Name);
+
+        return tours
+            .Where(t => t.Name.Contains(value, StringComparison.InvariantCultureIgnoreCase))
+            .Select(t => t.Name);
     }
+
+ 
+
+    private async Task HandleFileSelected(InputFileChangeEventArgs e)
+    {
+        var file = e.File;
+        if (file != null)
+        {
+            using (var stream = file.OpenReadStream())
+            using (var reader = new StreamReader(stream))
+            {
+                var jsonContent = await reader.ReadToEndAsync();
+                var importedTours = JsonConvert.DeserializeObject<Tour>(jsonContent);
+                _repository.AddTourAsync(importedTours);
+            }
+        }
+    }
+
+    private async Task TriggerFileInput()
+    {
+        await JS.InvokeVoidAsync("triggerFileInputClick", fileInput);
+    }
+
 }

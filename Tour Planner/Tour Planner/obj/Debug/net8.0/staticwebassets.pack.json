@@ -1,35 +1,35 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Stefan\\Documents\\GitHub\\tour-planner\\Tour Planner\\Tour Planner\\wwwroot\\app.css",
-      "PackagePath": "staticwebassets\\app.css"
+      "Id": "/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/wwwroot/app.css",
+      "PackagePath": "staticwebassets/app.css"
     },
     {
-      "Id": "C:\\Users\\Stefan\\Documents\\GitHub\\tour-planner\\Tour Planner\\Tour Planner\\wwwroot\\favicon.ico",
-      "PackagePath": "staticwebassets\\favicon.ico"
+      "Id": "/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Stefan\\Documents\\GitHub\\tour-planner\\Tour Planner\\Tour Planner\\wwwroot\\index.html",
-      "PackagePath": "staticwebassets\\index.html"
+      "Id": "/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/wwwroot/index.html",
+      "PackagePath": "staticwebassets/index.html"
     },
     {
-      "Id": "C:\\Users\\Stefan\\Documents\\GitHub\\tour-planner\\Tour Planner\\Tour Planner\\wwwroot\\js\\map.js",
-      "PackagePath": "staticwebassets\\js\\map.js"
+      "Id": "/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/wwwroot/js/map.js",
+      "PackagePath": "staticwebassets/js/map.js"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Tour_Planner.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.Tour_Planner.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Tour_Planner.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.Tour_Planner.props",
       "PackagePath": "build\\Tour_Planner.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Tour_Planner.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.Tour_Planner.props",
       "PackagePath": "buildMultiTargeting\\Tour_Planner.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Tour_Planner.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.Tour_Planner.props",
       "PackagePath": "buildTransitive\\Tour_Planner.props"
     }
   ],
