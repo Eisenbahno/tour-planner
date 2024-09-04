@@ -42,16 +42,14 @@
 
 <MudDialog @bind-IsOpen="_exportDialogOpen">
     <MudText>Select Tours to Export</MudText>
-    <DialogContent>
+    <MudDialog>
         @foreach (var tour in tours)
         {
             <MudCheckBox @bind-Checked="tour.IsSelected" Label="@tour.Name"/>
         }
-    </DialogContent>
-    <DialogActions>
+    </MudDialog>
         <MudButton OnClick="ExportSelectedTours" Color="Color.Primary">Export</MudButton>
         <MudButton OnClick="CloseExportDialog" Color="Color.Secondary">Cancel</MudButton>
-    </DialogActions>
 </MudDialog>
 
 
@@ -62,9 +60,9 @@
 @code {
 
     private bool _exportDialogOpen = false;
-    
+
     private List<Tour> tours;
-    
+
     private ElementReference fileInputRef;
     private Tour importedTour;
     private InputFile fileInput;
@@ -132,7 +130,6 @@
             .Select(t => t.Name);
     }
 
- 
 
     private async Task HandleFileSelected(InputFileChangeEventArgs e)
     {

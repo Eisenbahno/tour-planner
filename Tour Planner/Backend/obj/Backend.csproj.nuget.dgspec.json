@@ -68,6 +68,10 @@
               "target": "Package",
               "version": "[6.*, )"
             },
+            "NUnit": {
+              "target": "Package",
+              "version": "[4.2.2, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
@@ -167,6 +171,10 @@
             "MudBlazor": {
               "target": "Package",
               "version": "[6.*, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[4.2.2, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",

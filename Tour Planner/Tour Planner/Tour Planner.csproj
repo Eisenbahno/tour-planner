@@ -12,12 +12,12 @@
     <ItemGroup>
         <PackageReference Include="MudBlazor" Version="6.21.0" />
         <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+        <PackageReference Include="NUnit" Version="4.2.2" />
     </ItemGroup>
 
 
     <ItemGroup>
       <ProjectReference Include="..\Backend\Backend.csproj" />
-      <ProjectReference Include="..\Shared\Shared.csproj" />
     </ItemGroup>
 
 </Project>

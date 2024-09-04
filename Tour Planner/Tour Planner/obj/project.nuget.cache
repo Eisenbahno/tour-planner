@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "MhTNCNJM3sDv4lvGrtn63xZYhKemUMXs24fpIAjHZ9eThEpH+dh29x12J1V1baR8RHUJ8ynVlWJIKFkoYq2RnA==",
+  "dgSpecHash": "V4gcSf8vx5q1I1xyUSfP9g4gRd0CebLx7e+2JFElvxz/j9ehfvaFlZ3D1z4nfxyQPowIb/gU9W65BJNle1Zcsw==",
   "success": true,
   "projectFilePath": "/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Tour Planner/Tour Planner.csproj",
   "expectedPackageFiles": [
@@ -61,6 +61,7 @@
     "/Users/stefanrezk/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
     "/Users/stefanrezk/.nuget/packages/npgsql/7.0.0/npgsql.7.0.0.nupkg.sha512",
     "/Users/stefanrezk/.nuget/packages/npgsql.entityframeworkcore.postgresql/7.0.0/npgsql.entityframeworkcore.postgresql.7.0.0.nupkg.sha512",
+    "/Users/stefanrezk/.nuget/packages/nunit/4.2.2/nunit.4.2.2.nupkg.sha512",
     "/Users/stefanrezk/.nuget/packages/system.buffers/4.5.1/system.buffers.4.5.1.nupkg.sha512",
     "/Users/stefanrezk/.nuget/packages/system.configuration.configurationmanager/5.0.0/system.configuration.configurationmanager.5.0.0.nupkg.sha512",
     "/Users/stefanrezk/.nuget/packages/system.diagnostics.diagnosticsource/5.0.0/system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512",

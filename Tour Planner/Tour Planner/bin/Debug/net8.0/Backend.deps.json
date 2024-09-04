@@ -14,6 +14,8 @@
           "Microsoft.EntityFrameworkCore.Design": "7.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.0",
           "MudBlazor": "6.21.0",
+          "NUnit": "4.2.2",
+          "Newtonsoft.Json": "13.0.3",
           "Npgsql": "7.0.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.0",
           "Shared": "1.0.0",
@@ -628,6 +630,18 @@
           }
         }
       },
+      "NUnit/4.2.2": {
+        "runtime": {
+          "lib/net6.0/nunit.framework.dll": {
+            "assemblyVersion": "4.2.2.0",
+            "fileVersion": "4.2.2.0"
+          },
+          "lib/net6.0/nunit.framework.legacy.dll": {
+            "assemblyVersion": "4.2.2.0",
+            "fileVersion": "4.2.2.0"
+          }
+        }
+      },
       "System.Buffers/4.5.1": {},
       "System.CodeDom/4.4.0": {
         "runtime": {
@@ -862,6 +876,7 @@
           "Microsoft.EntityFrameworkCore": "7.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.0",
           "MudBlazor": "6.21.0",
+          "NUnit": "4.2.2",
           "Newtonsoft.Json": "13.0.3",
           "Npgsql": "7.0.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.0"
@@ -1304,6 +1319,13 @@
       "sha512": "sha512-CyUNlFZmtX2Kmw8XK5Tlx5eVUCzWJ+zJHErxZiMo2Y8zCRuH9+/OMGwG+9Mmp5zD5p3Ifbi5Pp3btsqoDDkSZQ==",
       "path": "npgsql.entityframeworkcore.postgresql/7.0.0",
       "hashPath": "npgsql.entityframeworkcore.postgresql.7.0.0.nupkg.sha512"
+    },
+    "NUnit/4.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mon0OPko28yZ/foVXrhiUvq1LReaGsBdziumyyYGxV/pOE4q92fuYeN+AF+gEU5pCjzykcdBt5l7xobTaiBjsg==",
+      "path": "nunit/4.2.2",
+      "hashPath": "nunit.4.2.2.nupkg.sha512"
     },
     "System.Buffers/4.5.1": {
       "type": "package",

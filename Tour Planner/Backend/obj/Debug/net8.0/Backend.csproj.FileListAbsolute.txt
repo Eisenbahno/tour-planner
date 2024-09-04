@@ -184,3 +184,5 @@ C:/Users/Stefan/Documents/GitHub/tour-planner/Tour Planner/Backend/bin/Debug/net
 C:/Users/Stefan/Documents/GitHub/tour-planner/Tour Planner/Backend/bin/Debug/net8.0/itextsharp.dll
 /Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Backend/bin/Debug/net8.0/itextsharp.dll
 /Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Backend/bin/Debug/net8.0/Newtonsoft.Json.dll
+/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Backend/bin/Debug/net8.0/nunit.framework.dll
+/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/Backend/bin/Debug/net8.0/nunit.framework.legacy.dll

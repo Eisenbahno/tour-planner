@@ -1,0 +1,83 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/TourPlannerUnutTest/TourPlannerUnutTest.csproj": {}
+  },
+  "projects": {
+    "/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/TourPlannerUnutTest/TourPlannerUnutTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/TourPlannerUnutTest/TourPlannerUnutTest.csproj",
+        "projectName": "TourPlannerUnutTest",
+        "projectPath": "/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/TourPlannerUnutTest/TourPlannerUnutTest.csproj",
+        "packagesPath": "/Users/stefanrezk/.nuget/packages/",
+        "outputPath": "/Users/stefanrezk/Documents/GitHub/tour-planner/Tour Planner/TourPlannerUnutTest/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/stefanrezk/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.8.0, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.14.0, )"
+            },
+            "NUnit.Analyzers": {
+              "target": "Package",
+              "version": "[3.9.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/stefanrezk/.dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
